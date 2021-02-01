@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url("./x.png");
+  background-size: cover;
+}
+
+h2 {
+  font-family: "Potta One";
+  font-weight: lighter;
+  font-family: 50px;
+  opacity: 0;
+  color: rgb(246, 246, 246);
+}
+
+.intro {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(26, 26, 26);
+  z-index: 1;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  color: rgb(228, 238, 238);
+  opacity: 0;
+}
+
+.logo {
+  font-family: "Potta One";
+}
+
+.logo::before {
+  content: "";
+  border-left: 1px solid red;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto";
+}
+
+.slogan {
+  opacity: 0;
+  transform: translateY(0);
+  position: absolute;
+  font-family: "Potta One";
+  font-size: 35px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  color: aliceblue;
+}
+
+.slider {
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: lightblue;
+  transform: translateY(100%);
+}
